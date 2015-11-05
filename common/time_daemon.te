@@ -17,3 +17,5 @@ allow time_daemon self:socket create_socket_perms;
 allow time_daemon self:capability { setuid setgid sys_time };
 
 r_dir_file(time_daemon, sysfs_esoc);
+
+qmux_socket(time_daemon);
